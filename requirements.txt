@@ -1,0 +1,23 @@
+# Core ML
+torch>=2.0
+transformers>=4.30
+datasets>=2.14
+tokenizers
+accelerate
+
+# Traditional ML
+sklearn-crfsuite
+scikit-learn
+
+# Evaluation
+seqeval
+numpy
+pandas
+
+# Visualization
+matplotlib
+seaborn
+
+# Utilities
+tqdm
+pyyaml
