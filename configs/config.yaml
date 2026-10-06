@@ -1,0 +1,56 @@
+# Project configuration
+project:
+  name: "Hindi NER: Traditional vs Transformer"
+  seed: 42
+
+# Dataset
+dataset:
+  name: "cfilt/HiNER-collapsed"
+  # Fallback if HiNER isn't available
+  fallback: "wikiann"
+  fallback_lang: "hi"
+  # Entity labels
+  labels:
+    - "O"
+    - "B-PER"
+    - "I-PER"
+    - "B-LOC"
+    - "I-LOC"
+    - "B-ORG"
+    - "I-ORG"
+
+# CRF configuration
+crf:
+  algorithm: "lbfgs"
+  c1: 0.1
+  c2: 0.1
+  max_iterations: 100
+  # Feature window: how many tokens before/after to look at
+  context_window: 2
+
+# mBERT configuration
+mbert:
+  model_name: "bert-base-multilingual-cased"
+  max_length: 128
+  learning_rate: 2e-5
+  batch_size: 16
+  num_epochs: 10
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  fp16: true
+  seed: 42
+
+# Evaluation
+evaluation:
+  # seqeval scheme
+  scheme: "IOB2"
+  # Number of error examples to analyze
+  num_error_examples: 100
+
+# Paths
+paths:
+  models: "models/"
+  results: "results/"
+  figures: "results/figures/"
+  tables: "results/tables/"
+  predictions: "results/predictions/"

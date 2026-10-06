@@ -1,0 +1,44 @@
+{
+  "overall_precision": 0.8833630832171567,
+  "overall_recall": 0.8590198413703976,
+  "overall_f1": 0.8710214097137021,
+  "report": {
+    "LOC": {
+      "precision": 0.8265464280681978,
+      "recall": 0.7897145934302638,
+      "f1-score": 0.807710843373494,
+      "support": 7428
+    },
+    "ORG": {
+      "precision": 0.8921168287365471,
+      "recall": 0.8772864167701757,
+      "f1-score": 0.8846394715394844,
+      "support": 58771
+    },
+    "PER": {
+      "precision": 0.8747048903878584,
+      "recall": 0.81511746680286,
+      "f1-score": 0.843860576727539,
+      "support": 12727
+    },
+    "micro avg": {
+      "precision": 0.8833630832171567,
+      "recall": 0.8590198413703976,
+      "f1-score": 0.8710214097137021,
+      "support": 78926
+    },
+    "macro avg": {
+      "precision": 0.8644560490642011,
+      "recall": 0.8273728256677666,
+      "f1-score": 0.8454036305468392,
+      "support": 78926
+    },
+    "weighted avg": {
+      "precision": 0.8831380552585011,
+      "recall": 0.8590198413703976,
+      "f1-score": 0.8708237600592548,
+      "support": 78926
+    }
+  },
+  "report_str": "              precision    recall  f1-score   support\n\n         LOC       0.83      0.79      0.81      7428\n         ORG       0.89      0.88      0.88     58771\n         PER       0.87      0.82      0.84     12727\n\n   micro avg       0.88      0.86      0.87     78926\n   macro avg       0.86      0.83      0.85     78926\nweighted avg       0.88      0.86      0.87     78926\n"
+}
